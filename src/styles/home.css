@@ -1,0 +1,170 @@
+#home {
+    display: flex;
+    position: relative;
+    padding: 0 0 7% 0;
+}
+
+#cta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 60%;
+    margin-top: 5%;
+    z-index: 4;
+    padding: 28px 8%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-primary-4);
+}
+
+#cta .title span {
+    color: var(--color-primary-5);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--color-neutral-0)fff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    position: absolute; 
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+#banner img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1364px) {
+    #home {
+        padding: 0 0 10% 0;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 3rem;
+    }
+
+    #cta .description {
+        font-size: 1.0rem;
+    }
+
+    #cta_buttons a {
+        font-size: 0.8rem;
+    }
+
+    #cta_buttons .btn-default {
+        padding: 10px 13px;
+        font-size: 13px;
+    }
+
+    #home .social-media-buttons a {
+        width: 38px;
+        height: 32px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    #home {
+        #home {
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #cta .title {
+        font-size: 2rem;
+    }
+
+    #cta .description {
+        font-size: 0.8rem;
+    }
+
+    #cta_buttons a {
+        font-size: 0.6rem;
+    }
+
+    #cta_buttons .btn-default {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    #home .social-media-buttons a {
+        width: 35px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #cta .title {
+        font-size: 1.3rem;
+    }
+
+    #cta .description {
+        font-size: 0.6rem;
+    }
+
+    #cta_buttons a {
+        font-size: 0.5rem;
+    }
+
+    #cta_buttons .btn-default {
+        padding: 4px 7px;
+        font-size: 8px;
+    }
+
+    #home .social-media-buttons a {
+        width: 25px;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+
+    #banner img {
+        width: 100%;
+        height: 310px;
+    }
+
+}
