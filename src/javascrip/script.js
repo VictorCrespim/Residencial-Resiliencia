@@ -69,4 +69,10 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     });
+
+    ScrollReveal().reveal('.depoimento-conteudo', {
+        origin:'rigth',
+        duration: 1000,
+        distance: '20%'
+    });
 });
