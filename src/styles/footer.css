@@ -9,14 +9,19 @@ footer {
     align-items: center;
 }
 
-#copyrigth {
-    color: var(--color-neutral-1);
+#copyright {
+    color: var(--color-primary-1);
     font-weight: 500;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 600px) {
     #footer_items {
         flex-direction: column;
         gap: 20px;
+    }
+
+    #copyright {
+        font-size: 0.7rem;
     }
 }

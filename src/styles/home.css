@@ -1,14 +1,14 @@
 #home {
     display: flex;
     position: relative;
-    padding: 0 0 7% 0;
+    padding: 0 0 9% 0;
 }
 
 #cta {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 15px;
     width: 60%;
     margin-top: 5%;
     z-index: 4;
@@ -17,7 +17,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-primary-4);
+    color: var(--color-primary-1);
 }
 
 #cta .title span {
@@ -26,7 +26,7 @@
 
 #cta .description {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--color-primary-1)
 }
 
 #cta_buttons {
@@ -36,7 +36,7 @@
 
 #cta_buttons a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-primary-1)
 }
 
 #phone_button {
@@ -144,22 +144,22 @@
     }
 
     #cta .description {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     #cta_buttons a {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     #cta_buttons .btn-default {
-        padding: 4px 7px;
-        font-size: 8px;
+        padding: 8px 11px;
+        font-size: 10px;
     }
 
     #home .social-media-buttons a {
-        width: 25px;
-        height: 20px;
-        font-size: 0.6rem;
+        width: 35px;
+        height: 30px;
+        font-size: 1rem;
     }
 
     #banner img {

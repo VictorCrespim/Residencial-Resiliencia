@@ -11,9 +11,6 @@
     margin-right: 70px;
 }
 
-#testimonials .section-subtitle {
-    font-size: 3rem;
-}
 
 #testimonials_content {
     width: 50%;
@@ -42,21 +39,13 @@
     justify-content: space-between;
     text-indent: 40px;
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 
 @media screen and (max-width: 1170px) {
     #testimonals {
         flex-direction: column;
-    }
-
-    #testimonials .section-title {
-        font-size: 1.3rem;
-    }
-
-    #testimonials .section-subtitle {
-        text-align: center;
-        font-size: 2.5rem;
     }
 
     #testimonial_chef {
@@ -72,13 +61,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    #testimonials .section-title {
-        font-size: 1.2rem;
-    }
-    #testimonials .section-subtitle {
-        font-size: 1.4rem;
-    }
-
     #testimonials_content {
         width: 100%;
     }

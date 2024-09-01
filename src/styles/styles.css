@@ -4,16 +4,17 @@
 @import url('menu.css');
 @import url('testimonials.css');
 @import url('footer.css');
+@import url('faleconosco.css');
 
 :root {
 
     --color-primary-1: #fff9ea;
-    --color-primary-2: #f4a7b9 ;
-    --color-primary-4: #d6883e  ;
-    --color-primary-5: #5ead4e ;
-    --color-primary-6: #ffa54f ;
+    --color-primary-2: #1e4963;
+    --color-primary-4: #662081;
+    --color-primary-5: #62c0f7;
+    --color-primary-6: #9819ca;
 
-    --color-neutral-0: #6ebc5e ;
+    --color-neutral-0: #62c0f7;
     --color-neutral-1: #000000;
     
 }
@@ -52,6 +53,11 @@ section {
     transition: backgroud-color .3s ease;
 }
 
+.btn-default a {
+    text-decoration: none;
+    color: var(--color-neutral-1);
+}
+
 .btn-default:hover {
     background-color: var(--color-primary-6);
 }
@@ -59,6 +65,10 @@ section {
 .social-media-buttons {
     display: flex;
     gap: 18px;
+}
+
+.social-media-buttons a:hover {
+    background-color: var(--color-primary-6);
 }
 
 .social-media-buttons a {
@@ -82,9 +92,31 @@ section {
 
 .section-title {
     color: var(--color-primary-4);
-    font-size: 1.563rem;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .section-subtitle {
-    font-size: 2.1875rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
+    
 }

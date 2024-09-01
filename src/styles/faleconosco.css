@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.map-section {
+    width: 50%; /* Ocupa 50% da largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-section iframe {
+    width: 90%; /* O mapa ocupará 80% da largura da seção do mapa */
+    height: 100%; /* O mapa ocupará 40% da altura da seção do mapa */
+    border: 0;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    border-radius: 20px; /* Bordas arredondadas */
+    overflow: hidden;
+}
+
+.info-section {
+    width: 50%; /* Ocupa 50% da largura da tela */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.info-section h1 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: inline;
+        width: 100%;
+    }
+
+    .map-section {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .info-section {
+        width: 100%; /* Ocupa 50% da largura da tela */
+    }
+
+    .info-section h1 {
+        font-size: 1.1em;
+    }
+
+    .info-section p {
+        font-size: 0.8rem;
+    }
+}
