@@ -2,9 +2,10 @@
 @import url('header.css');
 @import url('home.css');
 @import url('menu.css');
-@import url('testimonials.css');
+@import url('sobrenos.css');
 @import url('footer.css');
 @import url('faleconosco.css');
+@import url('depoimentos.css');
 
 :root {
 
@@ -12,7 +13,7 @@
     --color-primary-2: #1e4963;
     --color-primary-4: #662081;
     --color-primary-5: #62c0f7;
-    --color-primary-6: #9819ca;
+    --color-primary-6: #1e4963;
 
     --color-neutral-0: #62c0f7;
     --color-neutral-1: #000000;

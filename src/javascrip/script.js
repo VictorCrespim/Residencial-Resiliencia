@@ -46,14 +46,26 @@ $(document).ready(function() {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#testimonial_chef', {
+    ScrollReveal().reveal('#sobrenos_logo', {
         origin:'left',
         duration: 1000,
         distance: '20%'
     });
 
-    ScrollReveal().reveal('.feedback', {
+    ScrollReveal().reveal('.sobrenos-conteudo', {
         origin:'rigth',
+        duration: 1000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.info-section', {
+        origin:'rigth',
+        duration: 1000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.map-section', {
+        origin:'left',
         duration: 1000,
         distance: '20%'
     });
