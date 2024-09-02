@@ -86,4 +86,16 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     });
+
+    ScrollReveal().reveal('.servico-content-direita', {
+        origin:'rigth',
+        duration: 1000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.servico-content-esquerda', {
+        origin:'left',
+        duration: 1000,
+        distance: '20%'
+    });
 });
