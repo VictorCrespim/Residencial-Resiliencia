@@ -34,6 +34,17 @@ $(document).ready(function() {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
+    $(document).ready(function() {
+        // Função para ocultar a tela de carregamento e exibir o conteúdo principal
+        setTimeout(function() {
+            $('#loading-screen').css('opacity', '0');
+            $('#loading-screen').on('transitionend', function() {
+                $('#loading-screen').hide();
+                $('#main-content').fadeIn();
+            });
+        }, 1000); // 3 segundos de espera antes de ocultar a logo
+    });
+
     ScrollReveal().reveal('#cta', {
         origin:'left',
         duration: 2000,

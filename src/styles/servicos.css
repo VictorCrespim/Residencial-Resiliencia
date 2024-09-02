@@ -1,0 +1,145 @@
+#servicos {
+    padding: 0;
+    
+}
+
+
+#servicos p {
+    font-size: 1rem;
+    color: var(--color-neutral-1);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.servico-banner-direita {
+    margin-top: 20px;
+    position: relative; /* Posicionamento relativo para permitir que o conteúdo interno seja posicionado absolutamente */
+    width: 100%; /* Largura total da página */
+    height: 400px; /* Altura do banner, pode ser ajustada conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do contêiner */
+}
+
+#direita_img {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner do banner */
+    width: 50%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem se ajusta ao tamanho do contêiner, cortando as bordas se necessário */
+    /* Gradiente de transparência aplicado na imagem, da metade da tela para a esquerda */
+    mask-image: linear-gradient(to left, transparent, black 50%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 50%); /* Suporte para WebKit */
+    z-index: -1;
+    right: 0;
+    filter: contrast(40%);
+}
+
+#servico-icon {
+    width: 40px;
+    height: 35px;
+}
+
+#servicos_title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    align-items: center;
+    color: var(--color-primary-2);
+}
+
+.servico-content-direita {
+    width: 50%;
+    padding: 28px 8%;
+}
+
+.servico-banner-esquerda {
+    margin-top: 20px;
+    position: relative; /* Posicionamento relativo para permitir que o conteúdo interno seja posicionado absolutamente */
+    width: 100%; /* Largura total da página */
+    height: 400px; /* Altura do banner, pode ser ajustada conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do contêiner */
+}
+
+#esquerda_img {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner do banner */
+    width: 50%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem se ajusta ao tamanho do contêiner, cortando as bordas se necessário */
+    /* Gradiente de transparência aplicado na imagem, da metade da tela para a esquerda */
+    mask-image: linear-gradient(to right, transparent, black 50%);
+    -webkit-mask-image: linear-gradient(to left, transparent, black 50%); /* Suporte para WebKit */
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: contrast(30%);
+}
+
+.servico-content-esquerda {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner do banner */
+    top: 0; /* Alinhamento ao topo do contêiner */
+    right: 0; /* Alinhamento à direita do contêiner */
+    width: 50%; /* O conteúdo ocupa 50% da largura do contêiner, do lado direito */
+    height: 100%; /* O conteúdo ocupa 100% da altura do contêiner */
+    padding: 20px; /* Espaçamento interno (padding) ao redor do conteúdo */
+    padding: 28px 8%;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .servico-content-direita {
+        width: 80%;
+        align-items: center;
+    }
+
+    .servico-content-esquerda {
+        width: 80%;
+        align-items: center;
+    }
+
+    #servicos_title {
+        font-size: 1.2rem;
+    }
+
+    #servico-icon {
+        width: 35px;
+        height: 30px;
+    }
+
+    #servicos p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 603px) {
+    #direita_img {
+        width: 70%;
+    }
+
+    #esquerda_img {
+        width: 70%;
+    }
+
+    .servico-content-direita {
+        width: 100%;
+        align-items: center;
+    }
+
+    .servico-content-esquerda {
+        width: 100%;
+        align-items: center;
+    }
+
+    #servicos_title {
+        font-size: 0.9rem;
+    }
+
+    #servico-icon {
+        width: 30px;
+        height: 25px;
+    }
+
+    #servicos p {
+        font-size: 0.9rem;
+    }
+
+}
