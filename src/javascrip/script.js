@@ -46,55 +46,55 @@ $(document).ready(function() {
     });
 
     ScrollReveal().reveal('#cta', {
-        origin:'left',
+        origin:'rigth',
         duration: 2000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.dish', {
-        origin:'left',
+        origin:'right',
         duration: 2000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('#sobrenos_logo', {
-        origin:'left',
+        origin:'rigth',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.sobrenos-conteudo', {
-        origin:'rigth',
+        origin:'left',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.info-section', {
-        origin:'rigth',
+        origin:'left',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.map-section', {
-        origin:'left',
+        origin:'right',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.depoimento-conteudo', {
-        origin:'rigth',
+        origin:'left',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.servico-content-direita', {
-        origin:'rigth',
+        origin:'left',
         duration: 1000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.servico-content-esquerda', {
-        origin:'left',
+        origin:'rigth',
         duration: 1000,
         distance: '20%'
     });
